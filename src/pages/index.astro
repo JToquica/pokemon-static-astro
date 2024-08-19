@@ -14,7 +14,7 @@ const title = "Pokémon Static | Inicio"
 	<h1 class="text-3xl font-bold text-center">Listado de Pokémons</h1>
 	<hr/>
 
-	<section aria-label="Listado de Pokemons" class="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-5 gap-4 mt-5">
+	<section aria-label="Listado de Pokemons" class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-4 mt-5 mx-2">
 		{
 			data.results.map(({name, url}) => <PokemonCard name={name} url={url}/>)
 		}
