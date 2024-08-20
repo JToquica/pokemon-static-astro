@@ -17,12 +17,17 @@ const imgSrc = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites
         "border-4": !isBig,
     }
 ]}>
-    <img src={imgSrc} class:list={[
-        {
-            "w-48 h-48": isBig,
-            "w-20 h-20": !isBig,
-        }
-    ]} alt=`Imagen del pokémon ${name}`/>
+    <img
+        src={imgSrc} 
+        transition:name={`${name}-image`}
+        class:list={[
+            {
+                "w-48 h-48": isBig,
+                "w-20 h-20": !isBig,
+            }
+        ]}
+        alt=`Imagen del pokémon ${name}`
+    />
 
     <span class:list={[
         "capitalize",
